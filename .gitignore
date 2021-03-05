@@ -2,6 +2,10 @@
 
 # dependencies
 /node_modules
+/server2/*
+/server2
+/socket*
+
 /.pnp
 .pnp.js
 
