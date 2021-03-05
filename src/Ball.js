@@ -19,8 +19,8 @@ function Ball(props) {
             // eslint-disable-line
             b += parseInt(event.acceleration.y*5);
             setcord({x: a, y: b});
-            let a = cord.x;
-            let b = cord.y;
+            a = cord.x;
+            b = cord.y;
          };
          
          window.addEventListener('devicemotion', handleMotionEvent, true);
