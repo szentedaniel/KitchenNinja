@@ -11,8 +11,8 @@ function Ball(props) {
     
 
      useEffect(() => {
-        var a = cord.x;
-        var b = cord.y;
+        let a = cord.x;
+        let b = cord.y;
         const handleMotionEvent = event => {
             
             a += parseInt(event.acceleration.x*5);
