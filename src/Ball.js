@@ -18,8 +18,8 @@ function Ball(props) {
             a += parseInt(event.acceleration.x*5);
             b += parseInt(event.acceleration.y*5);
             setcord({x: a, y: b});
-            a = cord.x;
-            b = cord.y;
+            //a = cord.x;
+           // b = cord.y;
          };
          
          window.addEventListener('devicemotion', handleMotionEvent, true);
