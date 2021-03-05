@@ -5,14 +5,14 @@ import React, {useState, useEffect} from 'react';
 function Ball(props) {
     // const [test, settest] = useState(0)
     const [cord, setcord] = useState({x: window.innerWidth/2, y: window.innerHeight/2})
-    var a = cord.x;
-    var b = cord.y;
+    
     let x = cord.x;
     let y = cord.y;    
     
 
      useEffect(() => {
-        
+        var a = cord.x;
+        var b = cord.y;
         const handleMotionEvent = event => {
             
             a += parseInt(event.acceleration.x*5);
