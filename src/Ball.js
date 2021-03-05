@@ -10,15 +10,17 @@ function Ball(props) {
 
     
      useEffect(() => {
-
-        const handleMotionEvent = event => {
             let a = cord.x;
             let b = cord.y;
+        const handleMotionEvent = event => {
+            
             // eslint-disable-line
             a += parseInt(event.acceleration.x*5);
             // eslint-disable-line
             b += parseInt(event.acceleration.y*5);
             setcord({x: a, y: b});
+            let a = cord.x;
+            let b = cord.y;
          };
          
          window.addEventListener('devicemotion', handleMotionEvent, true);
