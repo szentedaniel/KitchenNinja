@@ -9,16 +9,12 @@ function Ball(props) {
 
 
     
-     useEffect(() => {
-            let a = cord.x;
-            let b = cord.y;
-        const handleMotionEvent = event => {
-            a = cord.x;
-            b = cord.y;
+     useEffect(() => {            
+        const handleMotionEvent = event => {            
             // eslint-disable-line
-            a += parseInt(event.acceleration.x*5);
+            let a = a + parseInt(event.acceleration.x*5);
             // eslint-disable-line
-            b += parseInt(event.acceleration.y*5);
+            let b = b + parseInt(event.acceleration.y*5);
             setcord({x: a, y: b});
             
          };
@@ -51,7 +47,7 @@ function Ball(props) {
 
     return(
         <div>
-            <div> iksz: {cord.x}, y: {cord.y}</div>
+            <div> x: {cord.x}, y: {cord.y}</div>
             <form >
                 {/* <input onChange={inputTextHandler} type="text"/>
                 <button onClick={submitHandler} type="submit">a</button>  */}
