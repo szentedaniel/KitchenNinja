@@ -1,35 +1,23 @@
-/*eslint no-unused-vars:*/
-/*eslint no-use-before-define: */
 import React, {useState, useEffect} from 'react';
 
 function Ball(props) {
     // const [test, settest] = useState(0)
     const [cord, setcord] = useState({x: window.innerWidth/2, y: window.innerHeight/2})
-    
+
     let x = cord.x;
-
-    let y = cord.y;    
-    
-
     let y = cord.y;
 
 
-
-
+    let a = cord.x;
+    let b = cord.y;
      useEffect(() => {
-        let a = cord.x;
-        let b = cord.y;
 
-            
-
+        const handleMotionEvent = event => {
             // eslint-disable-line
-
             a += parseInt(event.acceleration.x*5);
             // eslint-disable-line
             b += parseInt(event.acceleration.y*5);
             setcord({x: a, y: b});
-            //a = cord.x;
-           // b = cord.y;
          };
          
          window.addEventListener('devicemotion', handleMotionEvent, true);
