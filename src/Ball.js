@@ -13,14 +13,14 @@ function Ball(props) {
             let a = cord.x;
             let b = cord.y;
         const handleMotionEvent = event => {
-            
+            a = cord.x;
+            b = cord.y;
             // eslint-disable-line
             a += parseInt(event.acceleration.x*5);
             // eslint-disable-line
             b += parseInt(event.acceleration.y*5);
             setcord({x: a, y: b});
-            a = cord.x;
-            b = cord.y;
+            
          };
          
          window.addEventListener('devicemotion', handleMotionEvent, true);
