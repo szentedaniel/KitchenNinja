@@ -1,3 +1,4 @@
+/*eslint no-unused-vars:*/
 import React, {useState, useEffect} from 'react';
 
 function Ball(props) {
