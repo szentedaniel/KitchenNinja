@@ -5,6 +5,8 @@
 /server2/*
 /server2
 /socket*
+/server*
+/server*/*
 
 /.pnp
 .pnp.js
