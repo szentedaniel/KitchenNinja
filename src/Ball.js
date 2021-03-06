@@ -33,7 +33,7 @@ function Ball(props) {
             //    }
             //}else{
                 loc_x.current = loc_x.current + parseInt(props.Accelerometer_x*2);
-                loc_y.current = loc_y.current + parseInt(props.Accelerometer_y*2);
+                loc_y.current = loc_y.current - parseInt(props.Accelerometer_y*2);
             //}
                 
          //};
