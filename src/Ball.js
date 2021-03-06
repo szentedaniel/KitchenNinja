@@ -46,14 +46,14 @@ function Ball(props) {
     //  }
 
     const ballStyle = {
-        top: loc_y,
-        left: loc_x
+        top: loc_y.current,
+        left: loc_x.current
     }
     
 
     return(
         <div>
-            <div>x: {loc_x}, y: {loc_y}</div>
+            <div>x: {loc_x.current}, y: {loc_y.current}</div>
             <form >
                 {/* <input onChange={inputTextHandler} type="text"/>
                 <button onClick={submitHandler} type="submit">a</button>  */}
