@@ -16,7 +16,7 @@ function Ball(props) {
         "timeout" : 10000,                  //before connect_error and connect_timeout are emitted.
         "transports" : ["websocket"]
       };
-      const socket = io.connect("http://185.45.197.227:3001/", connectionOptions);
+      const socket = io.connect("https://kitchen-ninja-server.herokuapp.com/", connectionOptions);
     
       socket.on('someevent', function (data) { console.log(data) })
 
