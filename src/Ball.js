@@ -1,4 +1,5 @@
 import React, { useEffect, useRef} from 'react';
+import { io } from "socket.io-client";
 
 function Ball(props) {
     // const [test, settest] = useState(0)
@@ -8,6 +9,16 @@ function Ball(props) {
 
     // let x = cord.x;
     // let y = cord.y;
+
+    const connectionOptions =  {
+        "force new connection" : true,
+        "reconnectionAttempts": "Infinity", //avoid having user reconnect manually in order to prevent dead clients after a server restart
+        "timeout" : 10000,                  //before connect_error and connect_timeout are emitted.
+        "transports" : ["websocket"]
+      };
+      const socket = io.connect("http://185.45.197.227:3001/", connectionOptions);
+    
+      socket.on('someevent', function (data) { console.log(data) })
 
 
     
@@ -34,6 +45,11 @@ function Ball(props) {
             //}else{
                 loc_x.current = loc_x.current + parseInt(props.Accelerometer_x*2);
                 loc_y.current = loc_y.current - parseInt(props.Accelerometer_y*2);
+                socket.emit('cords', {
+                    x: loc_x.current,
+                    y: loc_y.current
+                })
+                
             //}
                 
          //};
@@ -42,7 +58,15 @@ function Ball(props) {
          //return () => window.removeEventListener('devicemotion', handleMotionEvent);
      }, [props.Accelerometer_x, props.Accelerometer_y]); // eslint-disable-line react-hooks/exhaustive-deps
     
-    
+     let socket_x=0;
+     let socket_y=0;
+
+
+    socket.on('cords', data => {
+        console.log(data.x + ' ' + data.y);
+        socket_x = data.x;
+        socket_y = data.y;
+    })
     //  const inputTextHandler = (e) => {
     //      console.log(parseInt(e.target.value));
     //      settest(parseInt(e.target.value));
@@ -67,6 +91,7 @@ function Ball(props) {
     return(
         <div>
             <div>x: {loc_x.current}, y: {loc_y.current}</div>
+            <div>socket params: x:{socket_x}, y:{socket_y}</div>
             <form >
                 {/* <input onChange={inputTextHandler} type="text"/>
                 <button onClick={submitHandler} type="submit">a</button>  */}

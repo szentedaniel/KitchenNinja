@@ -4,12 +4,13 @@ import React, {useEffect, useState} from 'react';
 import './App.css';
 import Sensors from './Sensors';
 import Ball from './Ball';
-import { io } from "socket.io-client";
+
 
 
 
 function App() {
-  const socket = io('http://185.45.197.227:3001/');
+
+  
 
   const [{ Accelerometer_gx,
      Accelerometer_gy,
