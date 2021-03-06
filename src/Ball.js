@@ -1,23 +1,28 @@
-import React, {useState, useEffect} from 'react';
+import React, { useEffect, useRef} from 'react';
 
 function Ball(props) {
     // const [test, settest] = useState(0)
-    const [cord, setcord] = useState({x: window.innerWidth/2, y: window.innerHeight/2})
+    // const [cord, setcord] = useState({x: window.innerWidth/2, y: window.innerHeight/2})
+    const loc_x = useRef(window.innerWidth/2);
+    const loc_y = useRef(window.innerHeight/2);
 
-    let x = cord.x;
-    let y = cord.y;
+    // let x = cord.x;
+    // let y = cord.y;
 
 
-    let a = cord.x;
-    let b = cord.y;
+    
      useEffect(() => {
 
         const handleMotionEvent = event => {
-            // eslint-disable-line
-            a += parseInt(event.acceleration.x*5);
-            // eslint-disable-line
-            b += parseInt(event.acceleration.y*5);
-            setcord({x: a, y: b});
+            // let a = cord.x;
+            // let b = cord.y;
+            // // eslint-disable-line
+            // a += parseInt(event.acceleration.x*5);
+            // // eslint-disable-line
+            // b += parseInt(event.acceleration.y*5);
+            // setcord({x: a, y: b});
+            loc_x.current = loc_x.current + parseInt(event.acceleration.x*5);
+            loc_y.current = loc_y.current + parseInt(event.acceleration.y*5);
          };
          
          window.addEventListener('devicemotion', handleMotionEvent, true);
@@ -41,14 +46,14 @@ function Ball(props) {
     //  }
 
     const ballStyle = {
-        top: y,
-        left: x
+        top: loc_y,
+        left: loc_x
     }
     
 
     return(
         <div>
-            <div>x: {cord.x}, y: {cord.y}</div>
+            <div>x: {loc_x}, y: {loc_y}</div>
             <form >
                 {/* <input onChange={inputTextHandler} type="text"/>
                 <button onClick={submitHandler} type="submit">a</button>  */}
