@@ -13,7 +13,7 @@ function Ball(props) {
     
      useEffect(() => {
 
-        const handleMotionEvent = event => {
+        //const handleMotionEvent = event => {
             // let a = cord.x;
             // let b = cord.y;
             // // eslint-disable-line
@@ -21,13 +21,13 @@ function Ball(props) {
             // // eslint-disable-line
             // b += parseInt(event.acceleration.y*5);
             // setcord({x: a, y: b});
-            loc_x.current = loc_x.current + parseInt(event.acceleration.x*5);
-            loc_y.current = loc_y.current + parseInt(event.acceleration.y*5);
-         };
+            loc_x.current = loc_x.current + parseInt(props.Accelerometer_x*5);
+            loc_y.current = loc_y.current + parseInt(props.Accelerometer_y*5);
+         //};
          
-         window.addEventListener('devicemotion', handleMotionEvent, true);
-         return () => window.removeEventListener('devicemotion', handleMotionEvent);
-     }, []); // eslint-disable-line react-hooks/exhaustive-deps
+         //window.addEventListener('devicemotion', handleMotionEvent, true);
+         //return () => window.removeEventListener('devicemotion', handleMotionEvent);
+     }, [props.Accelerometer_x, props.Accelerometer_y]); // eslint-disable-line react-hooks/exhaustive-deps
     
     
     //  const inputTextHandler = (e) => {
