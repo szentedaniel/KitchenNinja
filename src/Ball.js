@@ -21,20 +21,20 @@ function Ball(props) {
             // // eslint-disable-line
             // b += parseInt(event.acceleration.y*5);
             // setcord({x: a, y: b});
-            if ((loc_x.current > 0 && loc_x.current < window.innerWidth) && (loc_y.current > 0 && loc_y.current < window.innerHeight)) {
-                if ((loc_x.current + parseInt(props.Accelerometer_x*2)) > window.innerWidth) {
-                    loc_x.current = window.innerWidth;
-                }if ((loc_x.current + parseInt(props.Accelerometer_x*2)) < window.innerWidth) {
-                    loc_x.current = window.innerWidth;
-                }if ((loc_y.current + parseInt(props.Accelerometer_y*2)) < window.innerHeight) {
-                    loc_y.current = window.innerHeight;
-                }if ((loc_y.current + parseInt(props.Accelerometer_y*2)) > window.innerHeight) {
-                    loc_y.current = window.innerHeight;
-                }
-            }else{
-                loc_x.current = loc_x.current + parseInt(props.Accelerometer_x*5);
-                loc_y.current = loc_y.current + parseInt(props.Accelerometer_y*5);
-            }
+            //if ((loc_x.current > 0 && loc_x.current < window.innerWidth) && (loc_y.current > 0 && loc_y.current < window.innerHeight)) {
+            //    if ((loc_x.current + parseInt(props.Accelerometer_x*2)) > window.innerWidth) {
+            //        loc_x.current = window.innerWidth;
+            //    }if ((loc_x.current + parseInt(props.Accelerometer_x*2)) < window.innerWidth) {
+            //        loc_x.current = window.innerWidth;
+            //    }if ((loc_y.current + parseInt(props.Accelerometer_y*2)) < window.innerHeight) {
+            //        loc_y.current = window.innerHeight;
+            //    }if ((loc_y.current + parseInt(props.Accelerometer_y*2)) > window.innerHeight) {
+            //        loc_y.current = window.innerHeight;
+            //    }
+            //}else{
+                loc_x.current = loc_x.current + parseInt(props.Accelerometer_x*2);
+                loc_y.current = loc_y.current + parseInt(props.Accelerometer_y*2);
+            //}
                 
          //};
          
