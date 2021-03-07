@@ -16,8 +16,8 @@ function Ball(props) {
     }
 
     useEffect(() => {
-        loc_x.current = loc_x.current + parseInt(props.alpha*2);
-        loc_y.current = loc_y.current - parseInt(props.beta*2);
+        loc_x.current = loc_x.current + parseInt(props.Accelerometer_x*2);
+        loc_y.current = loc_y.current - parseInt(props.Accelerometer_y*2);
     
         socket.on('cords', data => {
         loc_x.current = data.x
@@ -37,7 +37,7 @@ function Ball(props) {
         return () => {
             socket.off('cords');
          };
-    },[props.alpha, props.beta])
+    },[props.Accelerometer_x, props.Accelerometer_y])
     
 
     return(
