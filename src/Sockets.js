@@ -8,7 +8,7 @@ const connectionOptions =  {
     "timeout" : 10000,                  //before connect_error and connect_timeout are emitted.
     "transports" : ["websocket"]
     };
-export const socket = io.connect("https://kitchen-ninja-server.herokuapp.com:36154/", connectionOptions); //https://kitchen-ninja-server.herokuapp.com:3001/
+export const socket = io.connect("https://kitchen-ninja-server.herokuapp.com:21432/", connectionOptions); //https://kitchen-ninja-server.herokuapp.com:3001/
 //http://185.45.197.227:3001/
 
         
