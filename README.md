@@ -12,8 +12,8 @@
 
 ## 📚 Tartalomjegyzék 📚
 
-- [Leírás](#-leírás)
-- [Dokumentáció](#-dokumentáció)
+- [Leírás](#-leírás-)
+- [Dokumentáció](#-dokumentáció-)
   - [Funkcionális követelmények](#funkcionális-követelmények)
   - [Nem funkcionális követelmények](#nem-funkcionális-követelmények)
   - [Use-case diagram](#use-case-diagram)
@@ -21,7 +21,7 @@
     - [1](#)
     - [2](#)
     - [3](#)
-- [Használt technológiák](#-használt-technológiák)
+- [Használt technológiák](#-használt-technológiák-)
 
 ## ✏️ Leírás ✏️
 
