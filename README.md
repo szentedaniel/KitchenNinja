@@ -36,21 +36,21 @@ Leírás ide
 
 ### Funkcionális követelmények:
 
-- A játékot lehessen egérrel és kézzel is irányítani, de ne egy időben
+- A játékot lehessen egérrel és kézzel is irányítani, de ne egyidejűleg
 - A játékos választhasson a kézzel és egérrel való irányítás között
-- Kézzel való irányítás esetén addig ne induljon el a játék, amíg a kamera használatát nem engedélyezi
+- Kézzel való irányítás esetén addig ne induljon el a játék, amíg a kamera használatát nem engedélyezi a játékos
 - A játékos számára legyen látható, hogy melyik alapanyagból hányat vágott el
 - A játékos számára legyen látható, hogy milyen rendelések érkeztek be
 - Az alapanyagok egérrel való irányításkor csak akkor vágódjanak el, ha a bal egérgomb le van nyomva és a pointer hozzáér az adott alapanyaghoz
-- Az alapanyagok kézzel való irányításkor akkor vágódjanak el, ha hozzáérnek a pointerhez
+- Az alapanyagok kézzel való irányításkor akkor vágódjanak el, ha az adott alapanyag hozzáér a pointerhez
 - A pálya sikeres teljesítésének feltétele a maximális pontszám 70%-ának elérése
 - Ha a játékos sikeresen teljesített egy szintet legyen lehetősége továbblépni a következő szintre vagy újrapróbálni az aktuális pályát
-- Ha a játékosnak nem sikerül teljesítenie egy sintet, akkor újra kell próbálnia
+- Ha a játékosnak nem sikerül teljesítenie egy szintet, akkor újra kell próbálnia
 
 ### Nem funkcionális követelmények:
 
 - Az alapanyagok 1 féleképpen eshessenek 2 darabra
-- A játéknak legalább 5 pályája legyen
+- A játéknak legalább 5 szintje legyen
 - A játék 1 percen belül töltsön be
 - A rendelések a játékfelület jobb oldalán, cetliken legyenek láthatók
 - A játékos egyidejűleg csak 4 rendelést lásson
