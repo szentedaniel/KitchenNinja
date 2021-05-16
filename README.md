@@ -5,7 +5,9 @@
 **`$ git clone https://github.com/szentedaniel/kitchen_ninja.git`**
 
 **`$ cd kitchen_ninja`**
+
 **`$ npm install`**
+
 **`$ npm run dev`**
 
 ## 📚 Tartalomjegyzék
