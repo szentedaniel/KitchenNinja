@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen ninja</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="info">
+            <h1 class="title">Kitchen Ninja</h1>
+            <h3>Selcet contoller mode</h3>
+            <div class="option">
+                <button id="mouse" class="active" onclick="start('Eger')" >Mouse</button>
+                <button id="hand" onclick="start('Kez')" >Hand</button>
+            </div>
+            <h3>Select gamemode</h3>
+            <div class="option">
+                <button id="single" class="active">Single</button>
+                <button id="challange" disabled>Challenge(Soon)</button>
+            </div>
+            <div id="startt" class="start">
+                <a href="game.html?eger=1"><button>Start game</button></a>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="settings.js"></script>
+    <script>
+        function start(sztring)
+        {
+            if(sztring=='Eger')
+            {
+                document.getElementById('startt').innerHTML='<a href="game.html?eger=1"><button>Start game</button></a>';
+            }else
+            {
+                document.getElementById('startt').innerHTML='<a href="game.html?eger=0"><button>Start game</button></a>';
+            }
+        }
+    </script>
+    <!-- <script>
+        let eger = false;
+        let gamemode = "single"
+
+        let egerClick = () => {
+            eger = true
+            console.log(eger);
+        }
+
+        let handClick = () => {
+            eger = false
+            console.log(eger);
+        }
+
+        let singleClick = () => {
+            gamemode = "single"
+            console.log(gamemode);
+        }
+
+        let challangeClick = () => {
+            gamemode = "challange"
+            console.log(gamemode);
+        }
+    </script> -->
+
+    <!-- <script src="./app.js"></script> -->
+</body>
+
+</html>
