@@ -36,9 +36,9 @@ Leírás ide
 
 ### Funkcionális követelmények:
 
+- A játékot lehessen egérrel és kézzel is irányítani, de ne egy időben
 - A játékos választhasson a kézzel és egérrel való irányítás között
-- A Pc-n futó játékot lehessen egérrel és kézzel is irányítani, de ne egy időben
-- Ha a játékos kézzel szerete játszani, addig ne induljon el a játék, amíg a kamera használatát nem engedélyezi
+- Kézzel való irányítás esetén addig ne induljon el a játék, amíg a kamera használatát nem engedélyezi
 - A játékos számára legyen látható, hogy melyik alapanyagból hányat vágott el
 - A játékos számára legyen látható, hogy milyen rendelések érkeztek be
 - Az alapanyagok egérrel való irányításkor csak akkor vágódjanak el, ha a bal egérgomb le van nyomva és a pointer hozzáér az adott alapanyaghoz
@@ -54,7 +54,7 @@ Leírás ide
 - A játék 1 percen belül töltsön be
 - A rendelések a játékfelület jobb oldalán, cetliken legyenek láthatók
 - A játékos egyidejűleg csak 4 rendelést lásson
-- A rendelések száma és a bennűk szereplő alapanyagok mennyisége a szintnek megfelelően nőjön
+- A rendelések száma és a bennük szereplő alapanyagok mennyisége a szintnek megfelelően növekedjen
 - Az elvágott alapanyagok számontartása az alapanyag képével, mellette a darabszámmal történjen
 
 ### Use-case diagram:
