@@ -82,6 +82,12 @@ A játék lényege, hogy a jobb oldalon feljövő rendeléseket teljesítsük, �
   <img src="https://user-images.githubusercontent.com/79571030/118633280-98878c00-b7d1-11eb-819d-f685e0fec584.png" width="700">
 </p>
 
+## Architektúra
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/szentedaniel/kitchen_ninja/main/documentation/architecture.png" width="700">
+</p>
+
 ## 💿 Használt technológiák 💿
 
 |   Mire    |                                                                                Mit                                                                                 |                 Link                 |
