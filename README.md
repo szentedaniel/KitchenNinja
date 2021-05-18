@@ -60,7 +60,7 @@ Leírás ide
 ### Use-case diagram:
 
 <p align="center">
-  ![UC_diagram](https://user-images.githubusercontent.com/79571030/118632969-3e86c680-b7d1-11eb-9977-42d04ee8e5f5.png)
+  <img src="https://user-images.githubusercontent.com/79571030/118632969-3e86c680-b7d1-11eb-9977-42d04ee8e5f5.png" width="700">
 </p>
 
 ## 💿 Használt technológiák 💿
