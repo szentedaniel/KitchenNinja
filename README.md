@@ -34,6 +34,7 @@ Ezt követően a játékot a `http://localhost:8000` címen érjük el.
     - [Újraindítás](https://raw.githubusercontent.com/szentedaniel/kitchen_ninja/main/documentation/06_ujrainditas.jpg)
     - [Rendelés generálása](https://raw.githubusercontent.com/szentedaniel/kitchen_ninja/main/documentation/07_rendeles_generalasa.jpg)
     - [Nap kiértékelése](https://raw.githubusercontent.com/szentedaniel/kitchen_ninja/main/documentation/08_nap_kiertekelese.jpg)
+- [Architektúra](#-architektúra-)
 - [Használt technológiák](#-használt-technológiák-)
 
 ## ✏️ Leírás ✏️
@@ -82,7 +83,7 @@ A játék lényege, hogy a jobb oldalon feljövő rendeléseket teljesítsük, �
   <img src="https://user-images.githubusercontent.com/79571030/118633280-98878c00-b7d1-11eb-819d-f685e0fec584.png" width="700">
 </p>
 
-## Architektúra
+## 🗂 Architektúra 🗂
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/szentedaniel/kitchen_ninja/main/documentation/architecture.png" width="700">
