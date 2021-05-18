@@ -21,7 +21,7 @@ function initszovegek()
 function cetlire()
 {
     ossz=rendelesek.length;
-    let mag = app2.renderer.height/ossz;
+    let mag = app2.renderer.height/4;
     for(let i = 0; i < 4;i++)
     {       
         cetlik[i].x = 0;  
