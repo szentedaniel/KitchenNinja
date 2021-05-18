@@ -2,13 +2,13 @@
 
 ## 🍗 Telepítés 🍗
 
-**`$ git clone https://github.com/szentedaniel/kitchen_ninja.git`**
+**```$ git clone https://github.com/szentedaniel/kitchen_ninja.git
 
-**`$ cd kitchen_ninja`**
+$ cd kitchen_ninja
 
-**`$ npm install`**
+$ npm install
 
-**`$ npm run dev`**
+$ npm run dev```**
 
 ## 🖐 Demók 🖐
 
