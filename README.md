@@ -23,14 +23,30 @@
   - [Nem funkcionális követelmények](#nem-funkcionális-követelmények)
   - [Use-case diagram](#use-case-diagram)
   - [Use-case táblázatok](#)
-    - [1](#)
-    - [2](#)
-    - [3](#)
+    - [Irányítás kiválasztása](https://raw.githubusercontent.com/szentedaniel/kitchen_ninja/main/documentation/01_iranyitas_kivalasztasa.jpg)
+    - [Játék indítása](https://raw.githubusercontent.com/szentedaniel/kitchen_ninja/main/documentation/02_jatek_inditasa.jpg)
+    - [Alapanyagok elvágása](https://raw.githubusercontent.com/szentedaniel/kitchen_ninja/main/documentation/03_alapanyagok_elvagasa.jpg)
+    - [Pálya teljesítése](https://raw.githubusercontent.com/szentedaniel/kitchen_ninja/main/documentation/04_palya_teljesitese.jpg)
+    - [Következő pálya](https://raw.githubusercontent.com/szentedaniel/kitchen_ninja/main/documentation/05_kovetkezo_palya.jpg)
+    - [Újraindítás](https://raw.githubusercontent.com/szentedaniel/kitchen_ninja/main/documentation/06_ujrainditas.jpg)
+    - [Rendelés generálása](https://raw.githubusercontent.com/szentedaniel/kitchen_ninja/main/documentation/07_rendeles_generalasa.jpg)
+    - [Nap kiértékelése](https://raw.githubusercontent.com/szentedaniel/kitchen_ninja/main/documentation/08_nap_kiertekelese.jpg)
 - [Használt technológiák](#-használt-technológiák-)
 
 ## ✏️ Leírás ✏️
 
-Leírás ide
+### Alapötlet
+
+Az elgondolás és célkitűzés az volt, hogy papa's éttermi játékok és a fruit ninját ötvözzük, ezzel egy böngészős játékot létrehozva.
+Ebben szendvicseket kell készíteni a bejövő rendelések függvényében úgy, hogy az alapanyagokat a fruit ninjaban megszokott módon vágjuk el.
+A játék nehézségének növelése érdekében nem csak egérrel irányíthatjuk, hanem a kezünkkel is, amihez **szükséges** a **webkamera**.
+
+### Játék működése
+
+A legelején kiválasztható, hogy kézzel, kamerán keresztül vagy egérrel szeretnénk irányítani a játékot.
+Ezt követően a játék betölt. 
+A játék lényege, hogy a jobb oldalon feljövő rendeléseket teljesítsük, úgy, hogy csak a szükséges mennyiségű alapanyagokat vágjuk el. Amennyiben több alapanyagot vágtunk el a kelleténél, mivel sokat pazaroltunk ezért pénzlevonás jár. A egy nap(_szint_) akkor teljesíthető, ha legalább a kitűzött összeget elérjük. Amennyiben ez nem sikerült, újra próbálkozhatunk.
+
 
 ## 📄 Dokumentáció 📄
 
