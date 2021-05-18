@@ -13,7 +13,7 @@ $ npm start
 ```
 Ezt követően a játékot a `http://localhost:8000` címen érjük el.
 
-## 🖐 Demók 🖐
+## 🐱‍👤 Demók 🐱‍👤
 
 - [Demó](https://kitchen-ninja-debug.herokuapp.com/)
 - [Demó (_backup_)](https://kitchen-ninja-backup.herokuapp.com/)
@@ -90,4 +90,13 @@ A játék lényege, hogy a jobb oldalon feljövő rendeléseket teljesítsük, �
 |  Routing  |   <a href="https://expressjs.com/"><img width=100px src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png"></a>    | [Express.js](https://expressjs.com/) |
 | Front-end |    <a href="https://www.javascript.com/"><img width=50px src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/768px-Unofficial_JavaScript_logo_2.svg.png"></a>     |   [JavaScript](https://www.javascript.com/)   |
 | Engine |    <a href="https://www.pixijs.com/"><img width=50px src="https://www.markhawkinsdesigns.com/images/blog/pixijs.jpg"></a>     |   [PixiJS](https://www.pixijs.com/)   |
+
+## 💻 Fejlesztői környezet 💻
+
+|   Mire    |                                                                                Mit                                                                                 |                 Link                 |
+| :-----------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------: |
+| Kódolás  |  <a href="https://code.visualstudio.com/"><img width=50px src="hhttps://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fuser-images.githubusercontent.com%2F674621%2F71187801-14e60a80-2280-11ea-94c9-e56576f76baf.png&f=1&nofb=1"></a>   |  [VSCode](https://code.visualstudio.com/)   |
+|  Diagram szerkesztő  |   <a href="https://www.microsoft.com/hu-hu/microsoft-365/visio/flowchart-software"><img width=100px src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvignette.wikia.nocookie.net%2Flogopedia%2Fimages%2Fe%2Fee%2FVisio-1.png%2Frevision%2Flatest%3Fcb%3D20180105110709&f=1&nofb=1"></a>    | [MS Visio](https://www.microsoft.com/hu-hu/microsoft-365/visio/flowchart-software) |
+| Projekt kezelő |    <a href="https://trello.com//"><img width=50px src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2016%2F06%2FTrello_logo.png&f=1&nofb=1"></a>     |   [Trello](https://trello.com//)   |
+
 
