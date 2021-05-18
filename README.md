@@ -9,8 +9,9 @@ $ cd kitchen_ninja
 
 $ npm install
 
-$ npm run dev
+$ npm start
 ```
+Ezt követően a játékot a `http://localhost:8000` címen érjük el.
 
 ## 🖐 Demók 🖐
 
